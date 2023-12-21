@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.ui.MainActivity">
 
     <TextView
         android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/public_sans"
-        android:text="Hello, Dummy"
+        android:text="Hello"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,6 +87,7 @@
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/item_product" />
@@ -129,4 +130,27 @@
         app:icon="@drawable/ic_add_gallery"
         app:layout_constraintBottom_toTopOf="@id/fab_camera"
         app:layout_constraintEnd_toEndOf="@id/fab_camera" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/load_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/loading_anim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/pb_main"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

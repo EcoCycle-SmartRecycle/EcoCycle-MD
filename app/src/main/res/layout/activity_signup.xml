@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".view.ui.SignupActivity">
 
     <ImageView
         android:id="@+id/img_signup"
@@ -18,8 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ed_signup_name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tl_signup_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -35,6 +34,7 @@
         tools:alpha="100">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_signup_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,8 +42,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ed_signup_email"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tl_signup_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -53,11 +52,12 @@
         android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_signup_name"
+        app:layout_constraintTop_toBottomOf="@+id/tl_signup_name"
         app:startIconDrawable="@drawable/ic_email"
         tools:alpha="100">
 
-        <com.paw.ecocycle.custome.CustomeEmail
+        <com.paw.ecocycle.view.custom.CustomEmail
+            android:id="@+id/ed_signup_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
@@ -65,8 +65,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ed_signup_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tl_signup_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -77,11 +76,12 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_signup_email"
+        app:layout_constraintTop_toBottomOf="@+id/tl_signup_email"
         app:startIconDrawable="@drawable/ic_lock"
         tools:alpha="100">
 
-        <com.paw.ecocycle.custome.CustomePassword
+        <com.paw.ecocycle.view.custom.CustomPassword
+            android:id="@+id/ed_signup_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
@@ -100,17 +100,16 @@
         android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_signup_password"
+        app:layout_constraintTop_toBottomOf="@+id/tl_signup_password"
         tools:alpha="100" />
 
-<!--    <com.google.android.gms.common.SignInButton-->
-<!--        android:id="@+id/btn_google"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="80dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/btn_signup"-->
-<!--        app:layout_constraintStart_toStartOf="@id/btn_signup"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/btn_signup" />-->
-
+    <ProgressBar
+        android:id="@+id/pb_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
