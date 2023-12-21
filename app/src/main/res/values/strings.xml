@@ -2,8 +2,10 @@
     <string name="app_name">Ecocycle</string>
     <string name="email_check">Email tidak sesuai</string>
     <string name="pass_check">Password tidak boleh kurang dari 8 karakter</string>
-    <string name="intro_1">Lorem ipsum dolor sit amet consectetur. Urna hac imperdiet orci erat aliquam magna cursus metus. In tortor volutpat varius sapien. Lacus risus a tincidunt dolor ac nulla. Id auctor aenean arcu pellentesque vitae.</string>
-    <string name="intro_2">Lorem ipsum dolor sit amet consectetur.</string>
+    <string name="intro_1">Transforming Operations: Smart Waste Management Solutions
+        Cut Costs, Enhance Sustainability Optimize Workshops with Efficient Waste Plans
+        Empower Your Business: Practical &amp; Cost-effective Waste Strategies</string>
+    <string name="intro_2">Build your store and Recycle your waste with ease!\n\nLet\'s move on!</string>
     <string name="email">Email</string>
     <string name="password">Kata sandi</string>
     <string name="login">Masuk</string>

@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_start"
-    tools:context=".StartActivity">
+    tools:context=".view.ui.StartActivity">
 
+    <ImageView
+        android:id="@+id/tv_ecocycle"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/ecocycle_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/btn_start"
         android:layout_width="241dp"
@@ -19,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ecocycle"
         app:layout_constraintVertical_bias="0.85" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

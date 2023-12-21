@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="35dp"
     app:layoutDescription="@xml/activity_welcome_scene"
-    tools:context=".WelcomeActivity">
+    tools:context=".view.ui.WelcomeActivity">
 
     <LinearLayout
         android:id="@+id/h1"
