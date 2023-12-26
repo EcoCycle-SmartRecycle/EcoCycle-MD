@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ui.SplashActivity"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    tools:context=".view.ui.SplashActivity">
 
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="200dp"
+        android:contentDescription="@string/desc_logo"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +26,7 @@
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/staatliches"
         android:gravity="center"
-        android:text="EcoCycle"
+        android:text="@string/tv_splash"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/iv_logo"

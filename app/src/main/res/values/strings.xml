@@ -1,26 +1,47 @@
 <resources>
     <string name="app_name">Ecocycle</string>
-    <string name="email_check">Email tidak sesuai</string>
-    <string name="pass_check">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="email_check">Invalid email address</string>
+    <string name="pass_check">Password must be at least 8 characters long</string>
     <string name="intro_1">Transforming Operations: Smart Waste Management Solutions
         Cut Costs, Enhance Sustainability Optimize Workshops with Efficient Waste Plans
-        Empower Your Business: Practical &amp; Cost-effective Waste Strategies</string>
+        Empower Your Business: Practical &amp; Cost-effective Waste Strategies.</string>
     <string name="intro_2">Build your store and Recycle your waste with ease!\n\nLet\'s move on!</string>
     <string name="email">Email</string>
-    <string name="password">Kata sandi</string>
-    <string name="login">Masuk</string>
-    <string name="Username">Nama Pengguna</string>
-    <string name="signup">Daftar</string>
-    <string name="start">Mulai</string>
-    <string name="account_check">Sudah Punya Akun?</string>
-    <string name="to_login">Masuk Disini</string>
-    <string name="to_signup">Daftar Sekarang</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="Username">Username</string>
+    <string name="signup">Signup</string>
+    <string name="start">Start</string>
+    <string name="account_check">Already have an account?</string>
+    <string name="to_login">Login Here</string>
+    <string name="to_signup">Signup Now</string>
     <string name="welcome_text">Welcome\nto\nEcocycle\n\nJoin Us</string>
-    <string name="desc_login">Tombol masuk</string>
-    <string name="desc_image">Gambar</string>
-    <string name="desc_signup">Tombol daftar</string>
-    <string name="desc_start">Tombol memulai aplikasi</string>
-    <string name="desc_drag_left">Usap kiri untuk melanjutkan</string>
-    <string name="desc_to_signup">Tombol ke menu daftar</string>
-    <string name="desc_to_login">Tombol ke menu masuk</string>
+    <string name="desc_login">Login Button</string>
+    <string name="desc_image">Image</string>
+    <string name="desc_signup">Signup Button</string>
+    <string name="desc_start">Start App Button</string>
+    <string name="desc_drag_left">Swipe left to continue</string>
+    <string name="desc_to_signup">Go to sign-up menu</string>
+    <string name="desc_to_login">Go to log-in menu</string>
+    <string name="desc_logo">App Logo</string>
+    <string name="tv_splash">EcoCycle</string>
+    <string name="desc_name_app">app name</string>
+    <string name="btn_recycle">Start Recycle</string>
+    <string name="desc_icon_announce">Announcement Image</string>
+    <string name="inv_recycling">Lets Recycle Your Garage Waste</string>
+    <string name="text_showcase">Product Showcase</string>
+    <string name="fab_add">Add Image Button</string>
+    <string name="fab_add_camera">Take Image</string>
+    <string name="fab_add_gallery">Load Image</string>
+    <string name="text_result">Result:</string>
+    <string name="tv_non_rust">Non-Rust:</string>
+    <string name="tv_rust">Rust:</string>
+    <string name="change_lang">Change Language</string>
+    <string name="logout">Logout</string>
+    <string name="my_store">My Store</string>
+    <string name="Greeting">Hello, %1$s</string>
+    <string name="no_image">No Image</string>
+    <string name="hello">Hello, eco</string>
+    <string name="tv_rust_result">Rust: %1$s</string>
+    <string name="tv_norust_result">Non-Rust: %1$s</string>
 </resources>

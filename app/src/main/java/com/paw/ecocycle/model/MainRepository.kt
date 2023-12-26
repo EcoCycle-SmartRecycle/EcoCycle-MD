@@ -1,19 +1,18 @@
 package com.paw.ecocycle.model
 
-import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.liveData
-import com.google.gson.Gson
 import com.paw.ecocycle.model.local.datastore.UserModel
 import com.paw.ecocycle.model.local.datastore.UserPreference
+import com.paw.ecocycle.model.remote.request.LoginRequest
+import com.paw.ecocycle.model.remote.request.RegisterRequest
 import com.paw.ecocycle.model.remote.service.ApiService
 import com.paw.ecocycle.utils.ResultState
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
-import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 import java.io.File
 
@@ -25,7 +24,8 @@ class MainRepository private constructor(
     fun login(email: String, password: String) = liveData {
         emit(ResultState.Loading)
         try {
-            val successResponse = apiService.login(email, password)
+            val request = LoginRequest(email = email, password = password)
+            val successResponse = apiService.login(request)
             emit(ResultState.Success(successResponse))
         } catch (e: HttpException) {
             Log.d(TAG, "login: ${e.message.toString()}")
@@ -36,7 +36,8 @@ class MainRepository private constructor(
     fun register(name: String, email: String, password: String) = liveData {
         emit(ResultState.Loading)
         try {
-            val successResponse = apiService.register(name, email, password)
+            val request = RegisterRequest(name = name, email = email, password = password)
+            val successResponse = apiService.register(request)
             emit(ResultState.Success(successResponse))
         } catch (e: HttpException) {
             Log.d(TAG, "register: ${e.message.toString()}")
@@ -44,17 +45,17 @@ class MainRepository private constructor(
         }
     }
 
-    fun postImage(token: String, imageFile: File) = liveData {
+    fun postImage(imageFile: File) = liveData {
         emit(ResultState.Loading)
         val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
         val multipartBody = MultipartBody.Part.createFormData(
-            "photo",
+            "image",
             imageFile.name,
             requestImageFile
         )
         try {
             val successResponse =
-                apiService.postImage("Bearer $token", multipartBody)
+                apiService.postImage(token = "Bearer ${getSession().first().token}", multipartBody)
             emit(ResultState.Success(successResponse))
         } catch (e: HttpException) {
             Log.d(TAG, "post: ${e.message.toString()}")
@@ -62,6 +63,17 @@ class MainRepository private constructor(
         }
     }
 
+    fun getImages() = liveData {
+        emit(ResultState.Loading)
+        try {
+            val successResponse =
+                apiService.getImages(token = "Bearer ${getSession().first().token}")
+            emit(ResultState.Success(successResponse))
+        } catch (e: HttpException) {
+            Log.d(TAG, "get: ${e.message.toString()}")
+            emit(ResultState.Error(e.message.toString()))
+        }
+    }
     suspend fun saveSession(user: UserModel) {
         userPreference.saveSession(user)
     }

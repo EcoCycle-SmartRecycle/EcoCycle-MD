@@ -5,12 +5,12 @@
         <item
             android:id="@+id/menu_1"
             android:icon="@drawable/ic_language"
-            android:title="Ganti Bahasa"
+            android:title="@string/change_lang"
             app:showAsAction="never" />
         <item
             android:id="@+id/menu_2"
             android:icon="@drawable/ic_logout"
-            android:title="Keluar"
+            android:title="@string/logout"
             app:showAsAction="never" />
     </group>
 </menu>

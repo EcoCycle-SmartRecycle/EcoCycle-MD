@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/public_sans"
-        android:text="Hello"
+        android:text="@string/hello"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/public_sans"
-        android:text="Start Recycle"
+        android:text="@string/btn_recycle"
         app:layout_constraintEnd_toEndOf="@id/tv_hello"
         app:layout_constraintStart_toStartOf="@+id/tv_hello"
         app:layout_constraintTop_toBottomOf="@id/tv_hello" />
@@ -51,6 +51,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginEnd="10dp"
+                android:contentDescription="@string/desc_icon_announce"
                 android:src="@drawable/ic_announce" />
 
             <TextView
@@ -58,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/public_sans"
-                android:text="Ayo Daur Ulang Sampah Bengkelmu"
+                android:text="@string/inv_recycling"
                 android:textColor="@color/white" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -81,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Etalase Produk"
+                android:text="@string/text_showcase"
                 android:textAlignment="center"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -101,6 +102,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="28dp"
+        android:contentDescription="@string/fab_add"
         app:fabCustomSize="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="16dp"
-        android:text="Take Image"
+        android:text="@string/fab_add_camera"
         android:visibility="invisible"
         app:icon="@drawable/ic_add_camera"
         app:layout_constraintBottom_toTopOf="@id/fab_menu"
@@ -125,32 +127,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="8dp"
-        android:text="Load Image"
+        android:text="@string/fab_add_gallery"
         android:visibility="invisible"
         app:icon="@drawable/ic_add_gallery"
         app:layout_constraintBottom_toTopOf="@id/fab_camera"
         app:layout_constraintEnd_toEndOf="@id/fab_camera" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/load_anim"
+    <ProgressBar
+        android:id="@+id/pb_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
         android:visibility="gone"
-        app:lottie_rawRes="@raw/loading_anim"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-<!--    <ProgressBar-->
-<!--        android:id="@+id/pb_main"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

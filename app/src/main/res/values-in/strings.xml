@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ecocycle</string>
+    <string name="email_check">Alamat email tidak valid</string>
+    <string name="pass_check">Kata sandi harus terdiri dari minimal 8 karakter</string>
+    <string name="intro_1">Mengubah Operasi: Solusi Manajemen Sampah Cerdas. Hemat Biaya, Tingkatkan Keberlanjutan. Optimalisasi Bengkel dengan Rencana Pengelolaan Sampah yang Efisien. Memperkuat Bisnis Anda: Strategi Pengelolaan Sampah yang Praktis @amp; Biaya Efektif.</string>
+    <string name="intro_2">Bangun toko Anda dan Daur Ulang sampah dengan mudah!\n\nAyo lanjutkan!</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="Username">Nama Pengguna</string>
+    <string name="signup">Daftar</string>
+    <string name="start">Mulai</string>
+    <string name="account_check">Sudah memiliki akun?</string>
+    <string name="to_login">Masuk di sini</string>
+    <string name="to_signup">Daftar Sekarang</string>
+    <string name="welcome_text">Selamat datang\ndi\nEcocycle\n\nBergabunglah dengan kami</string>
+    <string name="desc_login">Tombol Masuk</string>
+    <string name="desc_image">Gambar</string>
+    <string name="desc_signup">Tombol Daftar</string>
+    <string name="desc_start">Tombol Mulai Aplikasi</string>
+    <string name="desc_drag_left">Geser ke kiri untuk melanjutkan</string>
+    <string name="desc_to_signup">Menuju menu daftar</string>
+    <string name="desc_to_login">Menuju menu masuk</string>
+    <string name="desc_logo">Logo Aplikasi</string>
+    <string name="tv_splash">EcoCycle</string>
+    <string name="desc_name_app">nama aplikasi</string>
+    <string name="btn_recycle">Mulai Daur Ulang</string>
+    <string name="desc_icon_announce">Gambar Pengumuman</string>
+    <string name="inv_recycling">Mari daur ulang sampah bengkel Anda</string>
+    <string name="text_showcase">Etalase Produk</string>
+    <string name="fab_add">Tombol Tambah Gambar</string>
+    <string name="fab_add_camera">Ambil Gambar</string>
+    <string name="fab_add_gallery">Pilih Gambar</string>
+    <string name="text_result">Hasil:</string>
+    <string name="tv_non_rust">Tidak Berkarat:</string>
+    <string name="tv_rust">Berkarat:</string>
+    <string name="change_lang">Ganti Bahasa</string>
+    <string name="logout">Keluar</string>
+    <string name="my_store">Toko Saya</string>
+    <string name="Greeting">Halo, %1$s</string>
+    <string name="no_image">Tidak ada Gambar</string>
+    <string name="hello">Halo, eco</string>
+    <string name="tv_rust_result">Karat: %1$s</string>
+    <string name="tv_norust_result">Bukan Karat: %1$s</string>
+</resources>

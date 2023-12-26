@@ -12,6 +12,17 @@
         android:layout_width="180dp"
         android:layout_height="140dp"
         android:layout_marginTop="55dp"
+        android:contentDescription="@string/desc_name_app"
+        android:src="@drawable/ecocycle_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_ecocycle"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="55dp"
         android:src="@drawable/ecocycle_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

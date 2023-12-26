@@ -1,12 +1,9 @@
 package com.paw.ecocycle.view.ui
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.WindowInsets
-import android.view.WindowManager
 import com.paw.ecocycle.R
 import com.paw.ecocycle.databinding.ActivityWelcomeBinding
 
@@ -20,19 +17,6 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
         setupAction()
-        //setupView()
-    }
-    private fun setupView() {
-        @Suppress("DEPRECATION")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.insetsController?.hide(WindowInsets.Type.statusBars())
-        } else {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        }
-        supportActionBar?.hide()
     }
 
     private fun setupAction() {

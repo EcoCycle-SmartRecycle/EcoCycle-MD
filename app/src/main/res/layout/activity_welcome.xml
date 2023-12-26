@@ -91,7 +91,7 @@
             android:fontFamily="@font/yeseva_one"
             android:text="@string/welcome_text"
             android:textAlignment="center"
-            android:textSize="40sp" />
+            android:textSize="38sp" />
 
         <Button
             android:id="@+id/btn_signup_activity"

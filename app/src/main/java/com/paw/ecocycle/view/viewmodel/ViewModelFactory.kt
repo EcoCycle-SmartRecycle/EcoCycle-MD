@@ -6,7 +6,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.paw.ecocycle.model.MainRepository
 import com.paw.ecocycle.utils.Injection
 
-class ViewModelFactory(private val repository: MainRepository): ViewModelProvider.NewInstanceFactory() {
+class ViewModelFactory(private val repository: MainRepository) :
+    ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
