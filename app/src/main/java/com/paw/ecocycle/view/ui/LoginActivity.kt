@@ -26,7 +26,6 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
-
         playAnimation()
         setupAction()
         setupViewModel()
@@ -84,7 +83,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun playAnimation() {
         ObjectAnimator.ofFloat(binding.imgLogin, View.TRANSLATION_X, -30f, 30f).apply {
             duration = 6000

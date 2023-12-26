@@ -74,7 +74,6 @@ class MainRepository private constructor(
             emit(ResultState.Error(e.message.toString()))
         }
     }
-
     suspend fun saveSession(user: UserModel) {
         userPreference.saveSession(user)
     }

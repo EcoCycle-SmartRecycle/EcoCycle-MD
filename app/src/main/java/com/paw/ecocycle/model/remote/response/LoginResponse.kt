@@ -3,13 +3,11 @@ package com.paw.ecocycle.model.remote.response
 import com.google.gson.annotations.SerializedName
 
 data class LoginResponse(
-
     @field:SerializedName("data")
     val loginResult: LoginResult? = null
 )
 
 data class LoginResult(
-
     @field:SerializedName("name")
     val name: String? = null,
 

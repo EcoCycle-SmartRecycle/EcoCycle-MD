@@ -21,7 +21,7 @@ data class Data(
 
 	@field:SerializedName("No-Rust")
 	val noRust: Any? = null,
-
+  
 	@field:SerializedName("id")
 	val id: Int? = null,
 

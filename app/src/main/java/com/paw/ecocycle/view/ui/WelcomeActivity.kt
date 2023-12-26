@@ -29,7 +29,6 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_login_activity -> {
                 startActivity(Intent(this, LoginActivity::class.java))
             }
-
             R.id.btn_signup_activity -> {
                 startActivity(Intent(this, SignupActivity::class.java))
             }

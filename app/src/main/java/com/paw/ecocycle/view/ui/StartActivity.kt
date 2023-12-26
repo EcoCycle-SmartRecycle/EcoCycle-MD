@@ -26,7 +26,7 @@ class StartActivity : AppCompatActivity() {
             startActivity(toWelcome)
         }
     }
-
+    
     private fun setupView() {
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

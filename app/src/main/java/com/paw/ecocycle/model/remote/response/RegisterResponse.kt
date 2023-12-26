@@ -3,7 +3,6 @@ package com.paw.ecocycle.model.remote.response
 import com.google.gson.annotations.SerializedName
 
 data class RegisterResponse(
-
     @field:SerializedName("message")
     val message: String? = null,
 
@@ -12,7 +11,6 @@ data class RegisterResponse(
 )
 
 data class User(
-
     @field:SerializedName("createdAt")
     val createdAt: String? = null,
 
