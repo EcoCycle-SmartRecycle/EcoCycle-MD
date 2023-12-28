@@ -9,6 +9,7 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
+import com.paw.ecocycle.R
 import com.paw.ecocycle.databinding.ActivityLoginBinding
 import com.paw.ecocycle.model.local.datastore.UserModel
 import com.paw.ecocycle.utils.ResultState
@@ -49,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
                         is ResultState.Error -> {
                             pbLogin.isVisible = false
-                            showToast(response.error)
+                            showToast(getString(R.string.account_not_found))
                         }
 
                         is ResultState.Success -> {
@@ -63,9 +64,9 @@ class LoginActivity : AppCompatActivity() {
                                 )
                             )
                             AlertDialog.Builder(this@LoginActivity).apply {
-                                setTitle("Berhasil")
-                                setMessage("Anda Berhasil Login")
-                                setPositiveButton("Lanjut") { _, _ ->
+                                setTitle(getString(R.string.success))
+                                setMessage(getString(R.string.success_login))
+                                setPositiveButton(getString(R.string.next)) { _, _ ->
                                     val toMain =
                                         Intent(this@LoginActivity, MainActivity::class.java)
                                     toMain.flags =

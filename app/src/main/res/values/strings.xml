@@ -44,4 +44,9 @@
     <string name="hello">Hello, eco</string>
     <string name="tv_rust_result">Rust: %1$s</string>
     <string name="tv_norust_result">Non-Rust: %1$s</string>
+    <string name="account_not_found">Account Not Found</string>
+    <string name="success_create">You have successfully created an account, please login</string>
+    <string name="success">Congratulations!</string>
+    <string name="success_login">Login Success</string>
+    <string name="next">Next</string>
 </resources>

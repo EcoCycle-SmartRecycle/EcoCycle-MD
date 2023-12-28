@@ -43,4 +43,9 @@
     <string name="hello">Halo, eco</string>
     <string name="tv_rust_result">Karat: %1$s</string>
     <string name="tv_norust_result">Bukan Karat: %1$s</string>
+    <string name="account_not_found">Akun Tidak Ditemukan</string>
+    <string name="success_create">Anda Berhasil Membuat Akun, Silahkan Login</string>
+    <string name="success">Selamat!</string>
+    <string name="success_login">Anda Berhasil Login</string>
+    <string name="next">Lanjut</string>
 </resources>

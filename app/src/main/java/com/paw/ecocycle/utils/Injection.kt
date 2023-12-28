@@ -9,7 +9,7 @@ import com.paw.ecocycle.model.remote.service.ApiConfig
 object Injection {
     fun provideRepository(context: Context): MainRepository {
         val pref = UserPreference.getInstance(context.dataStore)
-        val apiService = ApiConfig.getApiService(context)
+        val apiService = ApiConfig.getApiService()
         return MainRepository.getInstance(pref, apiService)
     }
 }
