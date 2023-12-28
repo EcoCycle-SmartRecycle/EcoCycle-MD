@@ -38,7 +38,7 @@
             android:fontFamily="@font/mate_sc"
             android:text="@string/intro_1"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="19sp" />
     </LinearLayout>
 
     <LinearLayout

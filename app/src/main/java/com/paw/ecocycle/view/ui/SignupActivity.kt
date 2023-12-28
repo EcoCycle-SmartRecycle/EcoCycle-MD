@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
+import com.paw.ecocycle.R
 import com.paw.ecocycle.databinding.ActivitySignupBinding
 import com.paw.ecocycle.utils.ResultState
 import com.paw.ecocycle.utils.showToast
@@ -54,7 +55,7 @@ class SignupActivity : AppCompatActivity() {
 
                         is ResultState.Success -> {
                             pbSignup.isVisible = false
-                            showToast("Anda Berhasil Membuat Akun, Silahkan Login")
+                            showToast(getString(R.string.success_create))
                             startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
                         }
 
