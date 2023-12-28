@@ -92,9 +92,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getImages() {
         val adapter = ListProductAdapter()
-        binding.pbMain.isVisible = true
         viewModel.getImages().observe(this) { response ->
-            binding.pbMain.isVisible = true
             when (response) {
                 ResultState.Loading -> {
                     binding.pbMain.isVisible = true
@@ -163,10 +161,8 @@ class MainActivity : AppCompatActivity() {
         selectedImageUri?.let { uri ->
             val imageFile = uriToFile(uri, this).reduceFileImage()
             Log.d("Image File", "showImage: ${imageFile.path}")
-            binding.pbMain.isVisible = true
 
             viewModel.postImage(imageFile).observe(this) { response ->
-                binding.pbMain.isVisible = false
                 if (response != null) {
                     when (response) {
                         is ResultState.Loading -> {
@@ -175,6 +171,7 @@ class MainActivity : AppCompatActivity() {
 
 
                         is ResultState.Error -> {
+                            binding.pbMain.isVisible = false
                             showToast(response.error)
                         }
 

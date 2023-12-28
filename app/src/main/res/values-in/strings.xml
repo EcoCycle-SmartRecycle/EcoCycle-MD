@@ -3,7 +3,7 @@
     <string name="app_name">Ecocycle</string>
     <string name="email_check">Alamat email tidak valid</string>
     <string name="pass_check">Kata sandi harus terdiri dari minimal 8 karakter</string>
-    <string name="intro_1">Mengubah Operasi: Solusi Manajemen Sampah Cerdas. Hemat Biaya, Tingkatkan Keberlanjutan. Optimalisasi Bengkel dengan Rencana Pengelolaan Sampah yang Efisien. Memperkuat Bisnis Anda: Strategi Pengelolaan Sampah yang Praktis @amp; Biaya Efektif.</string>
+    <string name="intro_1">Mengubah Operasi: Solusi Manajemen Sampah Cerdas. Hemat Biaya, Tingkatkan Keberlanjutan. Optimalisasi Bengkel dengan Rencana Pengelolaan Sampah yang Efisien. Memperkuat Bisnis Anda: Strategi Pengelolaan Sampah yang Praktis &amp; Biaya Efektif.</string>
     <string name="intro_2">Bangun toko Anda dan Daur Ulang sampah dengan mudah!\n\nAyo lanjutkan!</string>
     <string name="email">Email</string>
     <string name="password">Kata Sandi</string>
